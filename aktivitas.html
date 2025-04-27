@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aktivitas</title>
+  <link rel="stylesheet" href="aktivitas.css">
+</head>
+<body>
+
+<div class="container">
+  <a href="telusuri-aplikasi.html" class="back-link">← Kembali</a>
+
+  <h1>Aktivitas</h1>
+  <p class="subtitle">Yuk, beri tahu aktivitasmu kepada orang-orang di sekitarmu</p>
+
+  <!-- Kategori Minum -->
+  <h2 class="category">Aktivitas Sehari hari</h2>
+  <div class="grid">
+    <a  class="card" onclick="playSound('akumauminum')">
+      <img src="img/drink water.webp" alt="Minum Air Putih">
+      <div class="card-title">Aku mau minum</div>
+    </a>
+    <a  class="card" onclick="playSound('akumaumakan')">
+      <img src="img/eating.webp" alt="makan">
+      <div class="card-title">Aku mau makan</div>
+    </a>
+    <a  class="card" onclick="playSound('akumaumandi')">
+      <img src="img/mandi.webp" alt="mandi">
+      <div class="card-title">Aku mau mandi</div>
+    </a>
+    <a  class="card" onclick="playSound('akumautidur')">
+      <img src="img/sleeping.webp" alt="tidur">
+      <div class="card-title">Aku mau tidur</div>
+    </a>
+    <a  class="card" onclick="playSound('akumaubelajar')">
+      <img src="img/studying.jpeg" alt="belajar">
+      <div class="card-title">Aku mau belajar</div>
+    </a>
+    <a  class="card" onclick="playSound('akumaubermain')">
+      <img src="img/playing.jpeg" alt="bermain">
+      <div class="card-title">Aku mau bermain</div>
+    </a>
+    <a  class="card" onclick="playSound('tolongambilkanbaju')">
+      <img src="img/people.jpg" alt="Tambah Kartu">
+      <div class="card-title">Tolong Ambilkan baju</div>
+    </a>
+  </div>
+
+  <!-- Kategori Makan -->
+  <!-- <h2 class="category">Makan</h2>
+  <div class="grid">
+    <a  class="card">
+      <img src="https://via.placeholder.com/70" alt="Makan Sendiri">
+      <div class="card-title">Makan Sendiri</div>
+    </a>
+    <a href="#" class="card">
+      <img src="https://via.placeholder.com/70" alt="Makan Disuapi">
+      <div class="card-title">Makan Disuapi</div>
+    </a>
+    <a href="#" class="card">
+      <img src="https://via.placeholder.com/70" alt="Makan Bersama">
+      <div class="card-title">Makan Bersama</div>
+    </a>
+    <a href="#" class="card">
+      <img src="https://via.placeholder.com/70" alt="Makan di Sekolah">
+      <div class="card-title">Makan di Sekolah</div>
+    </a>
+    <a href="#" class="card">
+      <img src="https://via.placeholder.com/70" alt="Tambah Kartu">
+      <div class="card-title">Tambahkan Kartu</div>
+    </a>
+  </div> -->
+
+  <!-- Kategori Bermain -->
+  <!-- <h2 class="category">Bermain</h2>
+  <div class="grid">
+    <a href="#" class="card">
+      <img src="https://via.placeholder.com/70" alt="Bermain Bola">
+      <div class="card-title">Bermain Bola</div>
+    </a>
+    <a href="#" class="card">
+      <img src="https://via.placeholder.com/70" alt="Bermain Lego">
+      <div class="card-title">Bermain Lego</div>
+    </a>
+    <a href="#" class="card">
+      <img src="https://via.placeholder.com/70" alt="Bermain Air">
+      <div class="card-title">Bermain Air</div>
+    </a>
+    <a href="#" class="card">
+      <img src="https://via.placeholder.com/70" alt="Bermain di Luar">
+      <div class="card-title">Bermain di Luar</div>
+    </a>
+    <a href="#" class="card">
+      <img src="https://via.placeholder.com/70" alt="Tambah Kartu">
+      <div class="card-title">Tambahkan Kartu</div>
+    </a>
+  </div> -->
+
+  <!-- Kategori Istirahat -->
+  <!-- <h2 class="category">Istirahat</h2>
+  <div class="grid">
+    <a href="#" class="card">
+      <img src="https://via.placeholder.com/70" alt="Tidur Siang">
+      <div class="card-title">Tidur Siang</div>
+    </a>
+    <a href="#" class="card">
+      <img src="https://via.placeholder.com/70" alt="Tidur Malam">
+      <div class="card-title">Tidur Malam</div>
+    </a>
+    <a href="#" class="card">
+      <img src="https://via.placeholder.com/70" alt="Tambah Kartu">
+      <div class="card-title">Tambahkan Kartu</div>
+    </a>
+  </div> -->
+
+  <div class="bottom-image">
+    <img src="img/baju.jpeg" alt="People Illustration">
+  </div>
+
+</div>
+<!-- audio -->
+<audio id="player"></audio>
+
+<script>
+    function playSound(nama) {
+    const audio = document.getElementById('player');
+    audio.src = `audio/${nama}.mp3`;
+    audio.play();
+  }
+</script>
+
+</body>
+</html>

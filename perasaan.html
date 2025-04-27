@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perasaan</title>
+  <link rel="stylesheet" href="perasaan.css">
+</head>
+<body>
+
+<div class="container">
+  <a href="telusuri-aplikasi.html" class="back-link">← Kembali</a>
+
+  <h1>Perasaan</h1>
+  <p class="subtitle">Yuk, beri tahu perasaanmu kepada orang-orang di sekitarmu</p>
+
+  
+
+  <div class="grid">
+    <!-- Contoh Kartu -->
+    <a  class="card" onclick="playSound('sayaCapek')">
+      <img src="img/tired.png" alt="SayaCapek">
+      <div class="card-title" >Saya Capek</div>
+    </a>
+    <a  class="card" onclick="playSound('sayaBingung')">
+      <img src="img/confused.jpg" alt="Saya Bingung">
+      <div class="card-title">Saya Bingung</div>
+    </a>
+    <a  class="card" onclick="playSound('sayaragu')">
+      <img src="img/doubt.jpg" alt="Saya Ragu">
+      <div class="card-title">Saya Ragu</div>
+    </a>
+    <!-- Tambahkan kartu lainnya sesuai kebutuhan -->
+    <a  class="card" onclick="playSound('sayasetuju')">
+      <img src="img/agree.jpg" alt="Saya Setuju">
+      <div class="card-title">Saya Setuju</div>
+    </a>
+    <a  class="card" onclick="playSound('sayatidaksetuju')">
+      <img src="img/dont agree.jpg" alt="Saya Tidak Setuju">
+      <div class="card-title">Saya Tidak Setuju</div>
+    </a>
+    <a  class="card" onclick="playSound('sayapaham')">
+      <img src="img/understand.webp" alt="Saya Paham">
+      <div class="card-title">Saya Paham</div>
+    </a>
+
+    <a  class="card" onclick="playSound('sayaterganggu')">
+      <img src="img/terganggu.webp" alt="Saya Terganggu">
+      <div class="card-title">Saya Terganggu</div>
+    </a>
+    <a  class="card" onclick="playSound('sayakecewa')">
+      <img src="img/kecewa.webp" alt="Saya Kecewa">
+      <div class="card-title">Saya Kecewa</div>
+    </a>
+    <a  class="card" onclick="playSound('sayatakut')">
+      <img src="img/scared.webp" alt="Saya Takut">
+      <div class="card-title">Saya Takut</div>
+    </a>
+
+    <!-- Tambahkan kartu tambahan -->
+    <a  class="card" onclick="playSound('sayamau')">
+      <img src="img/may.webp" alt="Saya Mau">
+      <div class="card-title">Saya Mau</div>
+    </a>
+    <a  class="card" onclick="playSound('sayatidakmau')">
+      <img src="img/dontwant.webp" alt="Saya Tidak Mau">
+      <div class="card-title">Saya Tidak Mau</div>
+    </a>
+    
+  </div>
+
+  <div class="bottom-image">
+    <img src="img/people2.jpg" alt="People Illustration">
+  </div>
+</div>
+
+<!-- audio -->
+<audio id="player"></audio>
+
+<script>
+    function playSound(nama) {
+    const audio = document.getElementById('player');
+    audio.src = `audio/${nama}.mp3`;
+    audio.play();
+  }
+</script>
+</body>
+</html>
